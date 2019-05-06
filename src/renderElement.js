@@ -36,6 +36,7 @@ export default function renderElement({
   return route.render({
     ...readyState,
     match,
+    router,
     Component: isComponentResolved ? Component : null,
     props: props && { match, router, ...props },
     environment,
